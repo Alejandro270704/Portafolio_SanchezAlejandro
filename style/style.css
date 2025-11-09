@@ -297,6 +297,168 @@ header {
   filter: blur(1.5px);
   animation: recorrer-borde 5s linear infinite;
 }
+/* SECCIÓN TECNOLOGÍAS */
+.tecnologias {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 2rem 3rem;
+  text-align: center;
+  animation: introducir 1.5s ease-out;
+}
+
+.tecnologias h2 {
+  font-size: 2rem;
+  color: #ffb347;
+  margin-bottom: 2rem;
+}
+
+.tecnologias-box {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2.5rem;
+  width: 80%;
+  max-width: 800px;
+}
+
+.tecnologia {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 1.5rem 1rem;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.tecnologia i {
+  font-size: 2.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.tecnologia.html i { color: #E34F26; }       
+.tecnologia.css i { color: #1572B6; }       
+.tecnologia.js i { color: #F7DF1E; }         
+.tecnologia.python i { color: #3776AB; }    
+.tecnologia.mysql i { color: #4479A1; }      
+.tecnologia.mongo i { color: #47A248; }      
+
+.tecnologia p {
+  color: #ddd;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.tecnologia:hover {
+  transform: scale(1.1);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* SECCIÓN CONTACTO */
+.contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 2rem 3rem;
+  text-align: center;
+  animation: introducir 1.5s ease-out;
+}
+.contacto a {
+  text-decoration: none; 
+  color: #ddd;         
+  transition: color 0.3s ease;
+}
+.contacto a:hover{
+  color: #ffb347;
+}
+.contacto h2 {
+  font-size: 2rem;
+  color: #ffb347;
+  margin-bottom: 1.5rem;
+}
+
+.contacto p {
+  color: #ddd;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.contacto p i {
+  margin-right: 0.5rem;
+  color: #ffb347;
+  font-weight: 500;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+/* BOTÓN HAMBURGUESA */
+
+.menu-hamburguesa {
+  display: none;
+  cursor: pointer;
+  font-size: 1.8rem;
+  color: #ffb347;
+  z-index: 1100;
+}
+
+/* Overlay */
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.95);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2000;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.menu-overlay.active {
+  display: flex;
+  opacity: 1;
+}
+
+.menu-contenido {
+  text-align: center;
+  position: relative;
+}
+
+.menu-overlay ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem;
+}
+
+.menu-overlay ul li {
+  margin: 1.2rem 0;
+}
+
+.menu-overlay ul li a {
+  color: #ddd;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.menu-overlay ul li a:hover {
+  color: #ffb347;
+}
+
+.cerrar-menu {
+  position: absolute;
+  top: -3rem;
+  right: -1rem;
+  font-size: 2rem;
+  color: #ddd;
+  cursor: pointer;
+}
+
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
@@ -324,4 +486,28 @@ header {
   }
   .proyectos-box {
     grid-template-columns: 1fr;}
+  .tecnologias-box {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+  .menu-hamburguesa {
+    display: block;
+  }
+
+  .encabezado .links {
+    display: none; /
+  }
+}
+body h2{
+  color:#ffb347;
+}
+.info-box,
+.content-experiencia p {
+  font-weight: 600;
+  text-shadow:
+    2px 2px 4px rgba(0, 0, 0, 0.9),
+    0 0 8px rgba(0, 0, 0, 0.7);
+}
+html {
+  scroll-behavior: smooth;
 }

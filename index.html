@@ -11,19 +11,42 @@
 <body>
 
 <div class="header-contenedor">
-    <header class="encabezado">
-        <h1>Mi Portafolio</h1>
-        <ul class="links">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">experiencia</a></li>
-            <li><a href="#">Proyectos</a></li>
-             <li><a href="#">Tecnologías</a></li>
-            <li><a href="#">Contacto</a></li>
+  <header class="encabezado">
+    <h1>Mi Portafolio</h1>
+
+    <!-- Botón hamburguesa -->
+    <div class="menu-hamburguesa" id="menu-hamburguesa">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <!-- Menú  -->
+    <ul class="links">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#experiencia">Experiencia</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#tecnologias">Tecnologías</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+
+    <!-- Overlay del menú  -->
+    <div class="menu-overlay" id="menu-overlay">
+      <div class="menu-contenido">
+        <div class="cerrar-menu" id="cerrar-menu">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <ul class="overlay-links">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#experiencia">Experiencia</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#tecnologias">Tecnologías</a></li>
+          <li><a href="#contacto">Contacto</a></li>
         </ul>
-    </header>
+      </div>
+    </div>
+  </header>
 </div>
 
-  <section class="inicio">
+  <section id="inicio" class="inicio">
     <div class="perfil-contentenido">
       <h1>Alejandro Sánchez Carrillo</h1>
       <h2>Software Developer Junior</h2>
@@ -40,7 +63,7 @@
         <a href="" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
     </div>
 
-      <div class="info-box">
+      <div id="experiencia" class="info-box">
         <p>
             Hola 👋 Soy Alejandro, un desarrollador de software apasionado por crear experiencias rápidas y funcionales.
             Tengo experiencia en el desarrollo de páginas web, la construcción y gestión de bases de datos relacionales (SQL)
@@ -51,7 +74,7 @@
     </div>
   </section>
     <!-- EXPERIENCIA -->
-    <section class="experiencia">
+    <section  class="experiencia">
       <div class="content-experiencia">
         <h2>Experiencia</h2>
       <p>
@@ -69,7 +92,7 @@
       
     </section>
    <!-- SECCIÓN PROYECTOS -->
-  <section class="proyectos">
+  <section id="proyectos" class="proyectos">
     <h2>Proyectos</h2>
     <div class="proyectos-box">
       <div class="proyecto-contenido">
@@ -106,7 +129,43 @@
       
     </div>
   </section>
-  
-  
+   <!-- SECCIÓN tecnologias -->
+<section id="tecnologias" class="tecnologias">
+  <h2>Tecnologías</h2>
+  <div class="tecnologias-box">
+    <div class="tecnologia html">
+      <i class="fa-brands fa-html5"></i>
+      <p>HTML5</p>
+    </div>
+    <div class="tecnologia css">
+      <i class="fa-brands fa-css3-alt"></i>
+      <p>CSS3</p>
+    </div>
+    <div class="tecnologia js">
+      <i class="fa-brands fa-js"></i>
+      <p>JavaScript</p>
+    </div>
+    <div class="tecnologia python">
+      <i class="fa-brands fa-python"></i>
+      <p>Python</p>
+    </div>
+    <div class="tecnologia mysql">
+      <i class="fa-solid fa-database"></i>
+      <p>MySQL</p>
+    </div>
+    <div class="tecnologia mongo">
+      <i class="fa-solid fa-leaf"></i>
+      <p>MongoDB</p>
+    </div>
+  </div>
+</section>
+   <!-- SECCIÓN contactoS -->
+  <section id="contacto" class="contacto">
+    <h2>Contacto</h2>
+    <p><i class="fa-solid fa-envelope"></i> <strong>Correo:</strong> <a href="mailto:yasdmi048@gmail.com">yasdmi048@gmail.com</a></p>
+    <p><i class="fa-solid fa-phone"></i> <strong>Teléfono:</strong> <a href="tel:+573022914761">+57 302 291 4761</a></p>
+  </section>
+
 </body>
+<script src="./script/main.js"></script>
 </html>
