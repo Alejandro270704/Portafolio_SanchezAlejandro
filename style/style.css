@@ -99,8 +99,8 @@ header {
 }
 
 .foto-perfil img {
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid #000;
@@ -452,8 +452,8 @@ header {
 
 .cerrar-menu {
   position: absolute;
-  top: -3rem;
-  right: -1rem;
+  top: 18rem;
+  left: 3.5rem;
   font-size: 2rem;
   color: #ddd;
   cursor: pointer;
@@ -510,4 +510,8 @@ body h2{
 }
 html {
   scroll-behavior: smooth;
+}
+span {
+  color: #ffb347;
+  font-weight: 600;
 }
