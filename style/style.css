@@ -238,7 +238,7 @@ header {
   animation: introducir 1.5s ease-out;
 }
 .proyectos-box {
-  width: 80%;
+  width: 90%;
   display: grid;
    grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 2rem;
@@ -318,8 +318,8 @@ header {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 2.5rem;
-  width: 80%;
-  max-width: 800px;
+  width: 100%;
+  max-width: 1100px;
 }
 
 .tecnologia {
@@ -332,7 +332,7 @@ header {
 }
 
 .tecnologia i {
-  font-size: 2.5rem;
+  font-size: 4rem;
   margin-bottom: 0.8rem;
 }
 
@@ -341,8 +341,9 @@ header {
 .tecnologia.js i { color: #F7DF1E; }         
 .tecnologia.python i { color: #3776AB; }    
 .tecnologia.mysql i { color: #4479A1; }      
-.tecnologia.mongo i { color: #47A248; }      
-
+.tecnologia.mongo i { color: #47A248; } 
+.tecnologia.java{color: #f89820;}     
+.tecnologia.springboot{color: #6db33f;}
 .tecnologia p {
   color: #ddd;
   font-size: 1rem;
@@ -493,7 +494,6 @@ header {
   .menu-hamburguesa {
     display: block;
   }
-
   .encabezado .links {
     display: none; /
   }
