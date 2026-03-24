@@ -260,8 +260,7 @@ header {
   width: 100%;
   border-radius: 12px;
   margin-bottom: 1rem;
-  height: 350px;     
-  object-fit: cover;  
+  height: 300px;     
 }
 
 .proyecto-contenido h3 {
@@ -497,8 +496,13 @@ header {
     display: block;
   }
   .encabezado .links {
-    display: none; /
+    display: none; 
   }
+  .proyecto-contenido img {
+  height: 160px;     
+  object-fit: cover;
+  border-radius: 8px;
+}
 }
 body h2{
   color:#ffb347;
